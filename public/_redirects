@@ -1,0 +1,11 @@
+# Force HTTPS and apex (Netlify handles HTTPS; this forces www → apex)
+https://www.gogreenportabletoilets.com/* https://gogreenportabletoilets.com/:splat 301!
+
+# Nice short path → Service Areas
+/service  /service-areas 301
+/services /service-areas 301
+
+# Fallback to index for unknown routes (if you're using any client routing)
+)
+# If all pages are static, you can omit this.
+/*  /index.html  200

@@ -1,0 +1,70 @@
+[build]
+command = "npx vite build"
+publish = "dist"
+
+[[redirects]]
+from = "https://www.gogreenportabletoilets.com/*"
+to = "https://gogreenportabletoilets.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/service"
+to = "/service-areas"
+status = 301
+
+[[redirects]]
+from = "/services"
+to = "/service-areas"
+status = 301
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+X-Frame-Options = "SAMEORIGIN"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+Content-Security-Policy = "default-src 'self' https: 'unsafe-inline' 'unsafe-eval' data: blob:"
+
+[[headers]]
+for = "/assets/*"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.js"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.css"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.png"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.jpg"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/sitemap.xml"
+
+[headers.values]
+Cache-Control = "public, max-age=3600"

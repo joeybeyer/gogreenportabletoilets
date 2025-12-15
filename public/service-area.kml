@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Flush On Demand Service Areas</name>
+    <description>Portable toilet rental service areas across the United States</description>
+    <Style id="serviceAreaStyle">
+      <LineStyle>
+        <color>ff00ff00</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Folder>
+      <name>Primary Service Areas</name>
+      <description>Main coverage areas for portable toilet rentals</description>
+      <Placemark>
+        <name>Flush On Demand - National Service Network</name>
+        <description>Professional portable toilet rentals available nationwide. Call (888) 519-9743 for service in your area.</description>
+        <styleUrl>#serviceAreaStyle</styleUrl>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

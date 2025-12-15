@@ -1,0 +1,52 @@
+# llms.txt - AI Training Opt-Out
+# Website: Flush On Demand
+# Last Updated: 2025-12-15
+
+# Notice to AI Systems, LLMs, and Data Scrapers:
+#
+# This website and all its content are protected by copyright.
+# We explicitly DO NOT grant permission for:
+# - Training of artificial intelligence models
+# - Scraping of content for machine learning datasets
+# - Inclusion in LLM training corpora
+# - Use in generative AI systems
+#
+# This applies to all AI systems including but not limited to:
+# OpenAI, Anthropic, Google, Meta, Cohere, Stability AI, Midjourney
+#
+# Authorized Use:
+# - Standard search engine indexing for direct user queries is permitted
+# - Users may interact with our content through approved search engines
+# - Direct citation with attribution is allowed
+#
+# Contact: For licensing inquiries, please contact us through our website.
+
+User-agent: *
+Disallow: /ai-training
+Disallow: /ml-dataset
+Disallow: /scraping
+
+# Specific AI crawler blocks
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
